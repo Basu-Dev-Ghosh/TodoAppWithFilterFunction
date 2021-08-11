@@ -182,27 +182,31 @@ h1
 }
 
 }
-@media only screen and (min-width:768px) and (max-width:1024px)
+@media only screen and (min-width:601px) and (max-width:1024px)
 {
     .todo-input-container
 {
     background-color: #fff;
     position: absolute;
-    top: 18%;
+    top: 28%;
     left: 50%;
     height: 56px;
     transform: translate(-50%,-50%);
     border-radius: 16px;
     display: flex;
 }
+.todo-items-container
+{
+    margin-top: 168px
 }
-@media only screen and (min-width:1024px) and (max-width:1336px)
+}
+@media only screen and (min-width:1025px) and (max-width:1336px)
 {
     .todo-input-container
 {
     background-color: #fff;
     position: absolute;
-    top: 14%;
+    top: 28%;
     left: 50%;
     height: 56px;
     transform: translate(-50%,-50%);
