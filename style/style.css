@@ -124,10 +124,6 @@ h1
     font-size: 45px;
     margin-top: 23px;
 }
-.todo-input-container
-{
-    top: 20%;
-}
 .todo-input-container .todo-input
 {
     width: 276px;
@@ -147,6 +143,10 @@ h1
     height: 37px;
     background-color: rgb(184, 0, 0);
     
+}
+.todo-items-container
+{
+    margin-top: 222px;
 }
 .todo-input-container .todo-input-button
 {
