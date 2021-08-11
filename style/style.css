@@ -124,6 +124,10 @@ h1
     font-size: 45px;
     margin-top: 23px;
 }
+.todo-input-container
+{
+    top: 20%;
+}
 .todo-input-container .todo-input
 {
     width: 276px;
