@@ -178,9 +178,6 @@ function deleteFromLocal(text) {
 
 function filter(e) {
     todos = todo_items.children;
-
-    console.log(todos)
-    console.log(e.target.value)
     for (let i = 0; i < todos.length; i++) 
     {
         let todo = todos[i];
