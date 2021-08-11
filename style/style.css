@@ -1,0 +1,208 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body
+{
+    
+    background: rgb(35,28,79);
+    background-image: linear-gradient(132deg, rgba(35,28,79,1) 8%, rgba(31,21,214,1) 73%);
+    overflow-x: hidden;
+
+}
+h1
+{
+    text-align: center;
+    font-size: 80px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.todo-input-container
+{
+    background-color:#fff;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    height: 56px;
+    transform: translate(-50%,-50%);
+    border-radius: 16px;
+    display: flex;
+}
+.todo-input-container .todo-input
+{
+    width: 400px;
+    padding: 14px;
+    outline: none;
+    border: 0;
+    border-radius: 16px;
+    font-size: 1.2rem;
+    color: #000
+}
+
+.todo-input-container .todo-input-button
+{
+    padding: 20px;
+    border: 0;
+    background-color: rgb(20, 45, 206);
+    color: rgb(255, 255, 255);
+    border-top-left-radius: 0px;
+    cursor: pointer;
+    border-bottom-left-radius: 0px;
+}
+#select_btn
+{
+    outline: none;
+    border: 0;
+    margin-left: 0px;
+    padding: 10px;
+    background-color: rgb(184, 0, 0);
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    border-radius: 16px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+}
+.todo-items-container
+{
+   
+    margin-top: 160px;
+    width: 100%;
+    margin-left: auto;
+    margin-right:auto ;
+}
+.todo-items-container .todo-item{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    min-height: 60px;
+    transition: all .3s ease;
+}
+.checked_item
+{
+    text-decoration: line-through;
+    opacity: .3;
+}
+.removed_item
+{
+    transform: rotate(90deg);
+    opacity: 0;
+}
+.todo-item p
+{
+    flex: 1;
+    margin-left: 30px;
+    font-size: 2rem;
+}
+.todo-item .check,.todo-item .delete
+{
+    padding: 20px;
+    border: 0;
+    background-color: rgb(19, 76, 211);
+    color: #fff;
+    cursor: pointer;
+}
+.todo-item i
+{
+    font-size: 30px;
+}
+.todo-item .delete
+{
+    background-color: rgb(194, 0, 0);
+    margin-right: 0;
+}
+
+@media only screen and (max-width:600px){
+    h1
+{
+    margin-left: 1px;
+    font-size: 45px;
+    margin-top: 23px;
+}
+.todo-input-container .todo-input
+{
+    width: 276px;
+    padding: 17px;
+    outline: none;
+    border: 0;
+    border-radius: 13px;
+    font-size: 1rem;
+    display: inline-block;
+}
+#select_btn
+{
+    margin-left:-121px;
+    border-radius: 0;
+    margin-top: 56px;
+    color: #fff;
+    height: 37px;
+    background-color: rgb(184, 0, 0);
+    
+}
+.todo-input-container .todo-input-button
+{
+    padding: 20px;
+    background-color: rgb(184, 0, 0);
+}
+.todo-item .check,.todo-item .delete
+{
+    
+    padding: 1.5rem;
+    border: 0;
+    background-color: rgb(19, 76, 211);
+    color: #fff;
+    margin-right: -5px;
+}
+.todo-item p
+{
+    font-size: 22px;
+    margin-left: 30px;
+}
+.todo-item i
+{
+    font-size:20px;
+}
+.todo-item .delete
+{
+    background-color: rgb(194, 0, 0);
+    margin-right: 0px;
+}
+.todo-item .check
+{
+    width: 70px;
+}
+
+}
+@media only screen and (min-width:768px) and (max-width:1024px)
+{
+    .todo-input-container
+{
+    background-color: #fff;
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    height: 56px;
+    transform: translate(-50%,-50%);
+    border-radius: 16px;
+    display: flex;
+}
+}
+@media only screen and (min-width:1024px) and (max-width:1336px)
+{
+    .todo-input-container
+{
+    background-color: #fff;
+    position: absolute;
+    top: 14%;
+    left: 50%;
+    height: 56px;
+    transform: translate(-50%,-50%);
+    border-radius: 16px;
+    display: flex;
+}
+}
